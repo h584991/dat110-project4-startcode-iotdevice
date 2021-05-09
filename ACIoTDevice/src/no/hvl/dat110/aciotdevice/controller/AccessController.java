@@ -181,7 +181,6 @@ public class AccessController extends MicroController {
 
 				// get the recent access code before checking
 				AccessCode newcode = client.doGetAccessCode();
-
 				if (newcode != null) {
 					code = newcode.getAccesscode();
 					Serial.println("UPDATING CODE");
